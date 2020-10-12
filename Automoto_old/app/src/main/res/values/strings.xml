@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Automoto</string>
+    <string name="menu_title_1">Principale</string>
+    <string name="menu_title_2">Statistiche</string>
+    <string name="menu_title_3">Altro</string>
+    <string name="Annulla">Annulla</string>
+    <string name="Aggiungi">Aggiungi</string>
+    <string name="Veicoli">Veicoli</string>
+    <string name="Km">Km</string>
+    <string name="Promemoria">Promemoria</string>
+    <string name="Carburante">Carburante</string>
+    <string name="Manutenzione">Manutenzione</string>
+    <string name="TasseAssicurazione">Tasse ed Assicurazioni</string>
+    <string name="Imprevisti">Imprevisti</string>
+</resources>

@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.PrincipaleFragment">
+
+
+    <!-- Veicolo -->
+
+
+
+
+
+
+
+    <ImageView
+        android:id="@+id/veicolo_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_car_black_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/veicolo_testo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Nome Veicolo"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/veicolo_img"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/veicoli_bottone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/ic_arrow_forward_black_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider_1"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="60dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="1dp" />
+
+
+    <!-- Km -->
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="KM"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider_1" />
+
+    <TextView
+        android:id="@+id/km_testo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:text="080.000"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/divider_1" />
+
+    <ImageButton
+        android:id="@+id/km_bottone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/ic_arrow_forward_black_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider_1" />
+
+    <View
+        android:id="@+id/divider_2"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="60dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintTop_toBottomOf="@+id/divider_1"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <!-- Promemoria -->
+
+    <ImageView
+        android:id="@+id/promemoria_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_alarm_black_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider_2" />
+
+    <TextView
+        android:id="@+id/promemoria_testo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Invesrione gomme"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/promemoria_img"
+        app:layout_constraintTop_toBottomOf="@+id/divider_2" />
+
+    <TextView
+        android:id="@+id/promemoria_scadenza_data_testo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:text="31-12-2020"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/divider_3"
+        app:layout_constraintEnd_toStartOf="@+id/promemoria_bottone" />
+
+    <TextView
+        android:id="@+id/promemoria_scadenza_km_testo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="7dp"
+        android:text="Km 85.000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/promemoria_scadenza_data_testo"
+        app:layout_constraintEnd_toStartOf="@+id/promemoria_bottone"
+        app:layout_constraintTop_toBottomOf="@+id/divider_2" />
+
+    <ImageButton
+        android:id="@+id/promemoria_bottone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/ic_arrow_forward_black_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider_2" />
+
+    <View
+        android:id="@+id/divider_3"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="60dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintTop_toTopOf="@+id/divider_2"
+        tools:layout_editor_absoluteX="1dp" />
+
+
+    <!-- Carburante -->
+
+    <ImageView
+        android:id="@+id/carburante_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_gas_station_black_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider_3" />
+
+    <TextView
+        android:id="@+id/carburante_testo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Carburante"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/carburante_img"
+        app:layout_constraintTop_toBottomOf="@+id/divider_3" />
+
+    <ImageButton
+        android:id="@+id/carburante_bottone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/ic_arrow_forward_black_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider_3" />
+
+    <View
+        android:id="@+id/divider_4"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="60dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintTop_toTopOf="@+id/divider_3"
+        tools:layout_editor_absoluteX="1dp" />
+
+
+    <!-- Manutenzione -->
+
+    <ImageView
+        android:id="@+id/manutenzione_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_repair_black_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider_4" />
+
+    <TextView
+        android:id="@+id/manutenzione_testo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Manutenzione"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/manutenzione_img"
+        app:layout_constraintTop_toBottomOf="@+id/divider_4" />
+
+    <ImageButton
+        android:id="@+id/manutenzione_bottone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/ic_arrow_forward_black_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider_4" />
+
+    <View
+        android:id="@+id/divider_5"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="60dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintTop_toBottomOf="@+id/divider_4"
+        tools:layout_editor_absoluteX="1dp" />
+
+
+
+    <!-- Altre Spese -->
+
+    <ImageView
+        android:id="@+id/altreSpese_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_money_black_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider_5" />
+
+    <TextView
+        android:id="@+id/altreSpese_testo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Altre Spese"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/altreSpese_img"
+        app:layout_constraintTop_toBottomOf="@+id/divider_5" />
+
+    <ImageButton
+        android:id="@+id/altreSpese_bottone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/ic_arrow_forward_black_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider_5" />
+
+    <View
+        android:id="@+id/divider_6"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="60dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintTop_toBottomOf="@+id/divider_5"
+        tools:layout_editor_absoluteX="1dp" />
+
+
+    <!-- Imprevisti -->
+
+    <ImageView
+        android:id="@+id/imprevisti_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_announcement_black_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider_6" />
+
+    <TextView
+        android:id="@+id/imprevisti_testo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Imprevisti"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/imprevisti_img"
+        app:layout_constraintTop_toBottomOf="@+id/divider_6" />
+
+    <ImageButton
+        android:id="@+id/imprevisti_bottone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/ic_arrow_forward_black_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider_6" />
+
+
+    <!-- DA ELIMINARE -->
+    <TextView
+        android:id="@+id/text_principale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="189dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

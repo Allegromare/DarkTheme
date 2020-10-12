@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="io.github.allegromare.automoto.ui.home.PrincipaleFragment"
+        android:label="@string/menu_title_1"
+        tools:layout="@layout/layout_fragment_principale" >
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_km"
+            app:destination="@id/navigation_km" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_stat"
+        android:name="io.github.allegromare.automoto.ui.stat.StatFragment"
+        android:label="@string/menu_title_2"
+        tools:layout="@layout/layout_fragment_stat" />
+
+    <fragment
+        android:id="@+id/navigation_altro"
+        android:name="io.github.allegromare.automoto.ui.altro.AltroFragment"
+        android:label="@string/menu_title_3"
+        tools:layout="@layout/layout_fragment_altro" />
+    <fragment
+        android:id="@+id/navigation_km"
+        android:name="io.github.allegromare.automoto.ui.km.KmFragment"
+        android:label="layout_fragment_km"
+        tools:layout="@layout/layout_fragment_km" >
+        <action
+            android:id="@+id/action_navigation_km_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+</navigation>
